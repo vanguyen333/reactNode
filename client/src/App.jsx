@@ -4,7 +4,8 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
-import { Register } from "./pages/Register";
+
+import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { Write } from "./pages/Write";
 import { Home } from "./pages/Home";
