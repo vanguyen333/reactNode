@@ -131,7 +131,7 @@ $lightGreen: #b9e7e7;
             position: relative;
 
             &::after {
-              content: "alkd";
+              content: "";
               width: 100%;
               height: 100%;
               background-color: $lightGreen;
@@ -149,6 +149,30 @@ $lightGreen: #b9e7e7;
           }
           .content {
             flex: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h1 {
+              font-size: 48px;
+            }
+            p {
+              font-style: 18px;
+            }
+            button {
+              width: max-content;
+              padding: 10px 20px;
+              border: none;
+              cursor: pointer;
+              background-color: white;
+              border: 1px solid $lightGreen;
+              color: teal;
+
+              &:hover {
+                border: 1px solid white;
+                background-color: $lightGreen;
+                color: black;
+              }
+            }
           }
         }
       }
